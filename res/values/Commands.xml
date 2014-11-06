@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="commands">
+        <item>Music_Play</item>
+        <item>Music_Next</item>
+        <item>Music_Previous</item>
+        <item>Music_VolUp</item>
+        <item>Music_VolDown</item>
+        <item>Music_Mute</item>
+        <item>App_Close</item>
+        <item>App_Background</item>
+        <item>Answer_Phone</item>
+        <item>Launch_Musicplayer</item>
+        <item>Music_Playlist_Select</item>
+        <item>GoPro_Power</item>
+        <item>GoPro_ModeChange</item>
+        <item>GoPro_Shut_Stop</item>
+        
+    </string-array>
+
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="6dp"
+    android:background="@drawable/background_textview_static" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_info_connect"
+            style="@style/btnStyleBlackpearl"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Connect" />
+
+        <Button
+            android:id="@+id/button_info_run"
+            style="@style/btnStyleArsenic"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:text="Run" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView_fast"
+                style="@style/textviewStyleEdit1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        
+
+    </LinearLayout>
+
+ 		<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+		     <CheckBox
+		        android:id="@+id/checkBox_connected"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Connected" 
+		        android:clickable="false"/>
+		    
+		    <CheckBox
+		        android:id="@+id/checkBox_running"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="Running" 
+		        android:clickable="false"/>
+        </LinearLayout>
+
+</LinearLayout>

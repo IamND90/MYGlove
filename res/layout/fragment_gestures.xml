@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView
+       
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+  		android:textSize="20sp"
+        android:padding="5dp"
+        android:gravity="center"
+        android:background="@drawable/border1"
+        android:text="Gestures" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="4dp" >
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/textviewStyleStatic"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Profile:"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/spinner_gesture_profiles"
+                android:layout_width="130dp"
+                android:layout_height="40dp" />
+
+            <ImageButton
+                android:id="@+id/imageButton_new_profile"
+                style="@style/btnStyleArsenic"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:src="@android:drawable/ic_input_add" />
+
+            <ImageButton
+                android:id="@+id/imageButton_delete_profile"
+                style="@style/btnStyleArsenic"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:src="@android:drawable/ic_delete" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/textviewStyleStatic2"
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Available Gestures" />
+
+            <ListView
+                android:id="@+id/listView_Gestures"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </ListView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:id="@+id/linelayout_placeholder_graph"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginBottom="4dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/imageButton_graph_expand"
+                        style="@style/btnStyleArsenic"
+                        android:layout_width="70dp"
+                        android:layout_height="25dp"
+                        android:src="@android:drawable/arrow_down_float" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton_graph_update"
+                        style="@style/btnStyleArsenic"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:src="@android:drawable/ic_menu_info_details" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageButton
+                    style="@style/btnStyleArsenic"
+                    android:id="@+id/imageButton_saveGestures"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@android:drawable/ic_menu_save" />
+                <ImageButton
+                    style="@style/btnStyleArsenic"
+                    android:id="@+id/imageButton_deleteGestures"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:src="@android:drawable/ic_menu_delete" />
+                
+                
+                
+
+            </LinearLayout>
+ 
+                
+                <Button
+                    style="@style/btnStyleArsenic"
+                    android:id="@+id/button_recordGesture"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="2dp"
+                    android:text="Record"
+                    android:layout_marginBottom="2dp"
+                    android:textSize="14sp" />
+
+           
+                
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
